@@ -1,0 +1,4 @@
+metric,value,guardrail,passed
+relative_perplexity_delta,0.00045120242424379065,maximum 0.02,true
+mean_kl_baseline_to_hylix_nats,0.0005983624288489666,maximum 0.02,true
+ruler_accuracy_delta,0.027500000000000004,minimum -0.05,true

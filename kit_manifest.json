@@ -1,0 +1,13 @@
+{
+  "kit_version": "1.0",
+  "task_count": 20,
+  "domain_counts": {
+    "code": 10,
+    "math": 10
+  },
+  "sha256": {
+    "data/hylix_eval_tasks.jsonl": "d3582170c728f6768c848db393f4e4c7470c2379f4564e63468f1b57a2f42b25",
+    "hylix_client.py": "20f9743e0d5ef8827e610f83d90e4f05321aede8975cbfb2876ac83f2c12153b",
+    "score_results.py": "1b2c0f1fae13cc91a7b50ec457530655eabe2ac74f995251526cc75cef51b99c"
+  }
+}

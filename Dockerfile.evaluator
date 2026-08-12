@@ -1,0 +1,6 @@
+FROM python:3.11-slim
+
+WORKDIR /evaluation
+COPY score_results.py /evaluation/score_results.py
+
+ENTRYPOINT ["python", "/evaluation/score_results.py"]

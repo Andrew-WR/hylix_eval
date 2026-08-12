@@ -1,0 +1,7 @@
+condition,domain,tasks,strict_accuracy,functional_accuracy,normalized_accuracy,mean_output_tokens
+normal,math,10,0.70,0.70,0.70,5859.9
+normal,code,10,0.00,0.00,0.00,7494.2
+normal,overall,20,0.35,0.35,0.35,6677.1
+hylix,math,10,0.70,0.70,0.70,6423.6
+hylix,code,10,0.00,0.30,0.30,6077.5
+hylix,overall,20,0.35,0.50,0.50,6250.6

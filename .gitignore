@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+results/
+replication_results.jsonl
+RUNPOD_API_KEY*

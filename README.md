@@ -1,12 +1,13 @@
 # Hylix behavioral evaluation kit
 
-This repository lets invited researchers compare normal Qwen inference with
-Hylix on new prompts or rerun the original 20-task held-out evaluation. Normal
+This repo lets invited researchers compare normal Qwen-3.5-9B inference with
+Hylix on new prompts or rerun a 20 code + math task held-out evaluation. Normal
 and Hylix generations use the same prompt, decoding settings, and random seed.
 
 This is a behavioral replication kit. The Hylix probe and training pipeline
 remain private and are not required to evaluate the deployed method.
 
+Overall, you will find Hylix to improve coding reasoning much more than math.
 ## What you need
 
 - Python 3.10 or newer. The API client has no third-party dependencies.
@@ -47,12 +48,12 @@ Use `--profile raw` for general reasoning prompts, `math` for short-answer math,
 and `code` for HumanEval-style function-completion prompts.
 
 The client displays both generations and their token counts. `hylix_events` is
-the number of gated intervention pulses during a Hylix generation.
+the number of intervention pulses during a Hylix generation.
 
 ## 3. Rerun the original held-out evaluation
 
-The full run contains 20 paired tasks and permits up to 8192 output tokens per
-condition. It can take several hours and consumes endpoint credits. Start with
+The sample run contains 20 paired tasks and permits up to 8192 output tokens per
+condition. It can take several hours and consumes a lot of endpoint credits, so please start with a smaller sample size. Start with
 two tasks if desired:
 
 ```bash
@@ -127,10 +128,3 @@ domains, use the appropriate domain-specific evaluator on the generated JSONL.
 - `EXPERIMENT.md`: scope, settings, and limitations.
 - `SECURITY.md`: untrusted-code precautions.
 - `kit_manifest.json`: task counts and hashes for the critical public files.
-
-## Reporting
-
-Please report the endpoint metadata from `run_metadata.json`, the complete
-sampling command, task count, task-level paired results, and confidence
-intervals where appropriate. The historical sample is small (20 tasks), so
-individual-task outcomes should accompany aggregate percentages.
